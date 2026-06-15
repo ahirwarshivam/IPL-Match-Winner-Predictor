@@ -8,6 +8,10 @@ The application analyzes the current match situation, including score, wickets, 
 
 The project combines Machine Learning, Data Analysis, Cricket Analytics, Interactive Visualizations, and a modern Streamlit Dashboard to provide real-time match insights.
 
+## 🚀 Live Demo
+
+[Click Here to Open the App](https://ipl-match-winner-predictor-otfgeuz46an6kb3ffyg3yp.streamlit.app/)
+
 ---
 
 # Features
