@@ -155,6 +155,17 @@ Provides a complete snapshot of the match situation.
 * Responsive Dashboard
 * Modern Visualization Components
 
+## 📸 Dashboard Preview
+
+### Home Screen
+![Home Screen](screenshots/home.png)
+
+### Prediction Result
+![Prediction Result](screenshots/result.png)
+
+### Analytics Dashboard
+![Analytics Dashboard](screenshots/dashboard.png)
+
 ### User Experience Improvements
 
 * Searchable dropdowns
