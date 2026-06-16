@@ -164,7 +164,7 @@ Provides a complete snapshot of the match situation.
 ![Prediction Result](screenshots/result.png)
 
 ### Analytics Dashboard
-![Analytics Dashboard](screenshots/dashboard.png)
+![Analytics Dashboard](screenshots/dash.png)
 
 ### User Experience Improvements
 
