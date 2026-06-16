@@ -22,8 +22,8 @@ page_bg = f"""
 [data-testid="stAppViewContainer"] {{
     background:
         linear-gradient(
-            rgba(0,0,0,0.75),
-            rgba(0,0,0,0.75)
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
         ),
         url("data:image/jpg;base64,{bg_img}");
 
@@ -92,14 +92,14 @@ team_colors = {
     "Chennai Super Kings": "#F9CD05",
     "Mumbai Indians": "#004BA0",
     "Royal Challengers Bangalore": "#EC1C24",
-    "Kolkata Knight Riders": "#3A225D",
+    "Kolkata Knight Riders": "#A855F7",
     "Rajasthan Royals": "#EA1A85",
     "Sunrisers Hyderabad": "#FF822A",
     "Delhi Capitals": "#17479E",
     "Punjab Kings": "#D71920",
     "Gujarat Lions": "#FF6F00",
     "Deccan Chargers": "#1E90FF",
-    "Kochi Tuskers Kerala": "#008C45",
+    "Kochi Tuskers Kerala":"#6EE7B7",
     "Pune Warriors": "#005BAC",
     "Rising Pune Supergiant": "#7B3F98"
 }
@@ -335,9 +335,13 @@ if predict_btn:
             background:#00A3FF;
             height:22px;
             border-radius:12px;
+            text-align:center;
+            color:white;
+            font-weight:bold;
             ">
+            {round(win * 100)}%
             </div>
-        </div>
+       
         """, unsafe_allow_html=True)
 
     with col4:
@@ -345,21 +349,26 @@ if predict_btn:
         <p style='color:white;font-size:22px;font-weight:bold;'>
         {bowling_team}
         </p>
-
+        
         <div style="
         width:100%;
         background:#2d2d2d;
         height:22px;
         border-radius:12px;
         ">
-            <div style="
-            width:{round(loss * 100)}%;
-            background:#00A3FF;
-            height:22px;
-            border-radius:12px;
-            ">
-            </div>
+
+        <div style="
+        width:{round(loss * 100)}%;
+        background:#00A3FF;
+        height:22px;
+        border-radius:12px;
+        text-align:center;
+        color:white;
+        font-weight:bold;
+        ">
+        {round(loss * 100)}%
         </div>
+        
         """, unsafe_allow_html=True)
 
     values = [round(win * 100), round(loss * 100)]
